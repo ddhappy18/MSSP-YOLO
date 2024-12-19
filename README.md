@@ -1,11 +1,8 @@
-# LFMD-YOLO
+# MSSP-YOLO
 
-##### This paper makes the following main contributions:
+##### 本文的贡献有以下几点:
+1. 提出了一种多尺度空间金字塔网络MSSP。相较其他空间金字塔，本文提出的MSSP可以同时关注图像的全局空间信息、局部空间信息和通道信息。
+2. 为进一步提高检测精度，同时保证不增加额外的推理时间成本，利用重参数化的思想，设计了C3-DBB模块。
+3. 设计了一种新的基于MSSP和C3-DBB的口罩佩戴检测算法MSSP-YOLO。在两种公共口罩数据集上的实验结果表明，所提出的算法优于其他主流算法。
 
-1. A new mask detection algorithm LFMD-YOLO is proposed. This algorithm features the C3E (CSP Bottleneck with 3 convolutions-ECA) module, the MECAPF (max pooling ECA Pyramid - Fast) module, and the E-BiFPN (ECA-enhanced bidirectional feature pyramid network) module, designed to mine and enrich channel information. Further, by adding a YOLO detection head and improving the intersection over union (IoU), the algorithm
-   can fully balance the computational efficiency and accuracy.
-
-2. Two models, LFMD-YOLO and LFMD-YOLO-N, were developed based on model scaling factors, which were
-   suitable for different application scenarios respectively. For example, power-constrained edge computing devices, or the cloud and workstations with general-purpose graphics cards.
-3. On two public datasets, the LFMD-YOLO method demonstrates its superiority, outperforming several state-ofthe-art algorithms.
 
